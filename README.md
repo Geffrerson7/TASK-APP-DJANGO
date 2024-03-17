@@ -29,7 +29,7 @@ $ source venv/bin/activate
 Install project dependencies:
 
 ```bash
-    (env)$ pip install -r requirements.txt
+    (venv)$ pip install -r requirements.txt
 ```
 
 Then simply apply the migrations:
@@ -45,7 +45,7 @@ Then simply apply the migrations:
 You can now run the development server:
 
 ```bash
-    (env)$ python manage.py runserver
+    (venv)$ python manage.py runserver
 ```
 
 And navigate to
