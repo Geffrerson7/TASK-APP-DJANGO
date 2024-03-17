@@ -35,11 +35,11 @@ Install project dependencies:
 Then simply apply the migrations:
 
 ```bash
-    (env)$ python manage.py makemigrations
+    (venv)$ python manage.py makemigrations taskapp
 ```
 
 ```bash
-    (env)$ python manage.py migrate
+    (venv)$ python manage.py migrate
 ```
 
 You can now run the development server:
@@ -50,6 +50,35 @@ You can now run the development server:
 
 And navigate to
 
+```sh
+http://127.0.0.1:8000/
+```
+
+## Local Installation with Docker
+
+Clone the respository
+
+```bash
+$ git clone https://github.com/Geffrerson7/TASK-API.git
+```
+
+Navigate to the new directory
+
+```bash
+$ cd TASK-API
+```
+
+Use Docker Compose to build and start the project:
+```sh
+$ docker-compose up
+```
+
+Once the project is up and running, apply migrations to set up the database:
+```sh
+$ docker-compose exec web python manage.py migrate
+```
+
+After applying migrations, navigate to the following URL in your web browser:
 ```sh
 http://127.0.0.1:8000/
 ```
